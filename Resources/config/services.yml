@@ -1,0 +1,20 @@
+parameters:
+    anh_feed.resolver.class: Anh\FeedBundle\Resolver
+    anh_feed.url_generator.class: Anh\FeedBundle\UrlGenerator
+    anh_feed.twig.feed_extension.class: Anh\FeedBundle\Twig\FeedExtension
+
+services:
+    anh_feed.resolver:
+        class: %anh_feed.resolver.class%
+
+    anh_feed.url_generator:
+        class: %anh_feed.url_generator.class%
+        arguments:
+            - @router
+
+    anh_feed.twig.feed_extension:
+        class: %anh_feed.twig.feed_extension.class%
+        arguments:
+            - @anh_feed.url_generator
+        tags:
+            - { name: twig.extension }

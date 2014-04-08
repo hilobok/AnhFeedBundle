@@ -1,0 +1,5 @@
+anh_feed_index:
+    pattern:  /_feed/{feed}
+    defaults: { _controller: AnhFeedBundle:Feed:index }
+    requirements:
+        feed: "[^/]+"

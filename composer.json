@@ -1,0 +1,33 @@
+{
+    "name": "anh/feed-bundle",
+    "type": "symfony-bundle",
+    "description": "Bundle provides symfony integration of 'anh/feed-builder' library. RSS 2.0 and Atom 1.0 feeds building and validating.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Hilobok",
+            "email": "hilobok@gmail.com"
+        }
+    ],
+
+    "require": {
+        "anh/feed-builder": "~1.0"
+    },
+
+    "minimum-stability": "stable",
+
+    "autoload":{
+        "psr-0":{
+            "Anh\\FeedBundle": ""
+        }
+    },
+
+    "target-dir": "Anh/FeedBundle",
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
+
