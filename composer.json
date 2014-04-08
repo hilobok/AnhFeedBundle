@@ -1,7 +1,7 @@
 {
     "name": "anh/feed-bundle",
     "type": "symfony-bundle",
-    "description": "Bundle provides symfony integration of 'anh/feed-builder' library. RSS 2.0 and Atom 1.0 feeds building and validating.",
+    "description": "Bundle provides symfony integration of 'anh/feed-builder' library. Building and validating RSS 2.0 and Atom 1.0 feeds.",
     "license": "MIT",
     "authors": [
         {
