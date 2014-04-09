@@ -39,7 +39,8 @@ class FeedController extends Controller
         $modifiedSince = new DateTime('1970-01-01');
 
         if ($request->headers->has('If-Modified-Since')) {
-            $modifiedSince = DateTime::createFromString(
+            $modifiedSince = DateTime::createFromFormat(
+                DateTime::RSS,
                 $request->headers->get('If-Modified-Since')
             );
         }
